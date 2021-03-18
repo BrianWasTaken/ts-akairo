@@ -1,2 +1,2 @@
 # ts-akairo
-A discord bot template for the discord-akairo framework.
+A basic template for a discord bots made with discord-akairo and typescript.
