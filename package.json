@@ -4,7 +4,8 @@
   "description": "A discord bot template for the discord-akairo framework.",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist && tsc --project tsconfig.json"
   },
   "repository": {
     "type": "git",
