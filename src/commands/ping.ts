@@ -1,5 +1,5 @@
+import { Message, Guild } from 'discord.js'
 import { Command } from '../base/command'
-import { Message } from 'discord.js'
 
 export default class PingCommand extends Command {
 	constructor() {
@@ -12,9 +12,9 @@ export default class PingCommand extends Command {
 	}
 
 	async exec(message: Message) {
-		const { shard } = message.guild;
+		const { shard } = message.guild as Guild;
 		const before = Date.now();
-		const msg = await message.util.send('Pinging...');
+		const msg = await message.channel.send('Pinging...');
 		const diff = Date.now() - before;
 
 		return await msg.edit(`**__:ping_pong: Pong!__**\n**Shard:** ${shard.ping}ms\n**Bot:** ${diff}ms`);

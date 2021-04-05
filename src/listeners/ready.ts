@@ -11,6 +11,6 @@ export default class ReadyListener extends Listener {
 	}
 
 	exec() {
-		return console.log(`${this.client.user.tag} is ready!`)
+		return console.log(`${this.client.user?.tag} is ready!`)
 	}
 }

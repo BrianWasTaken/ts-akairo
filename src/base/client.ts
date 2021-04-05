@@ -3,18 +3,18 @@ import {
 	AkairoHandlerOptions,
 	AkairoOptions,
 	AkairoClient,
-} from 'discord-akairo'
+} from 'discord-akairo';
 import {
 	CommandHandler,
 	Command 
-} from './command'
+} from './command';
 import {
 	ListenerHandler,
 	Listener
-} from './listener'
+} from './listener';
 import {
 	ClientOptions
-} from 'discord.js'
+} from 'discord.js';
 
 export interface BotClientConstructor {
 	listenerHandlerOptions: AkairoHandlerOptions;

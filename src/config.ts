@@ -1,6 +1,6 @@
-import { BotClientConstructor } from './base/client'
-import { Command } from './base/command'
-import { join } from 'path'
+import { BotClientConstructor } from './base/client';
+import { Command } from './base/command';
+import { join } from 'path';
 
 export default <BotClientConstructor> {
 	listenerHandlerOptions: {

@@ -12,16 +12,17 @@ import {
 import BotClient from './client'
 
 export class Command extends AkairoCommand {
-	client: BotClient;
+	handler!: CommandHandler;
+	client!: BotClient;
 	constructor(id: string, options: CommandOptions) {
 		super(id, options);
 	}
 }
 
 export class CommandHandler extends AkairoCommandHandler {
-	categories: Collection<string, Category<string, Command>>;
-	modules: Collection<string, Command>;
-	client: BotClient;
+	categories!: Collection<string, Category<string, Command>>;
+	modules!: Collection<string, Command>;
+	client!: BotClient;
 	constructor(client: BotClient, options: CommandHandlerOptions) {
 		super(client, options);
 	}
